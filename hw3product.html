@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products</title>
+<style>
+.collapsible {
+  background-color: #343a6e;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active, .collapsible:hover {
+  background-color: #22243b;
+}
+
+.content {
+  padding: 25px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<h2 style="font-size: 36px;">Products</h2>
+
+<p>Some of the most popular toys sold by ABC Toys</p>
+<button type="button" class="collapsible">Toy #1</button>
+<div class="content">
+  <img src="army figures.jpg" class="img-fluid rounded" alt="little red and blue army figures">
+  <p>The small red and blue army figures are fun to let your imagination run wild.</p>
+</div>
+<button type="button" class="collapsible">Toy #2</button>
+<div class="content">
+  <img src="lego bricks.jpg" class="img-fluid rounded" alt="differently colored and shaped lego bricks">
+  <p>Lego bricks are another popular item. With a concept in mind, you can build what ever you want.</p>
+</div>
+<button type="button" class="collapsible">Toy #3</button>
+<div class="content">
+  <img src="toy cars.jpg" class="img-fluid rounded" alt="toy cars of Lamborghini">
+  <p>Lamborghini cars are fun to roll around, imagining you own one yourself.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
