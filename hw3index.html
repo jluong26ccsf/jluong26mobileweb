@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>ABC Toys</title>
+  <style>
+    body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #812f09;
+}
+
+ul.topnav li {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #4b1e0a;}
+
+ul.topnav li.left {
+  float: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 36px;
+}
+
+ul.topnav li.right {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.abcinfo {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {
+    float: none;}
+  }
+  </style>
 </head>
 
 <body>  
-<h1>ABC Toys</h1>
-<h3>Making learning fun</h3>
-<p>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
-<p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
-<p>By the way, parents love our toys too.</p>
 
-<ul>
-  <li><a href="https://jluong26ccsf.github.io/mobileweb/hw3contact.html">Contact Us</a></li>
-  <li><a href="https://jluong26ccsf.github.io/mobileweb/hw3product.html">Products</a></li>
-  <li><a href="https://jluong26ccsf.github.io/mobileweb/hw3location.html">Location</a></li>
-  <li><a href="https://jluong26ccsf.github.io/mobileweb/hw3extra.html">Extra</a></li>
-</ul>
+<ul class="topnav">
+  <li class="right"><a href="https://jluong26ccsf.github.io/mobileweb/hw3extra.html">Extra</a></li>
+  <li class="right"><a href="https://jluong26ccsf.github.io/mobileweb/hw3location.html">Location</a></li>
+  <li class="right"><a href="https://jluong26ccsf.github.io/mobileweb/hw3product.html">Products</a></li>
+  <li class="right"><a href="https://jluong26ccsf.github.io/mobileweb/hw3contact.html">Contact Us</a></li>
+  <li class="left"><a href="https://jluong26ccsf.github.io/mobileweb/hw3index.html">ABC Toys</a></li>
+  </ul>
+
+  <h1 class="abcinfo">ABC Toys</h1>
+<h3 class="abcinfo">Making learning fun</h3>
+<p class="abcinfo">ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
+<p class="abcinfo">The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
+<p class="abcinfo">By the way, parents love our toys too.</p>
 
 </body>
 </html>

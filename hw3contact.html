@@ -3,21 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <title>Contact</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+  </style>
 </head>
 
 <body>  
 <h1>Contact Us</h1>
-<h3>Making learning fun</h3>
-<p>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
-<p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
-<p>By the way, parents love our toys too</p>
 
-<ul>
-  <li><a href="https://jluong26ccsf.github.io/mobileweb/hw3contact.html">Contact Us</a></li>
-  <li><a href="https://jluong26ccsf.github.io/mobileweb/hw3product.html">Products</a></li>
-  <li><a href="https://jluong26ccsf.github.io/mobileweb/hw3location.html">Location</a></li>
-  <li><a href="https://jluong26ccsf.github.io/mobileweb/hw3extra.html">Extra</a></li>
-</ul>
+<p>abctoys@gmail.com</p>
+<p>(415) 239-3000</p>
+<p>50 Frida Kahlo Way, San Francisco, CA 94112</p>
+
+<form name="myform">
+  <table>
+      <tbody>
+      <tr>
+          <td><label for="hwag"></label>Name:</td>
+          <td><input type="text" id="name" name="name"></td>
+      </tr>
+      <tr>
+          <td><label for="mex"></label>Email:</td>
+          <td><input type="text" id="email" name="email"></td>
+      </tr>
+      <tr>
+          <td><label for="fex"></label>Comments:</td>
+          <td><input type="text" id="comment" name="comment"></td>
+      </tr>
+      </tbody>
+  </table>
+  <input type="button" onclick="submit()" value="SUBMIT">
+  <input type="reset" onclick="reset()" value="RESET">
+</form>
 
 </body>
 </html>
